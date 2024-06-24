@@ -1,0 +1,11 @@
+<h1>Appartement#index</h1>
+<p>Find me in app/views/appartements/index.html.erb</p>
+
+<div class="container">
+<% @appartements.each do |appartement| %>
+<div class="card"><%= appartement.adresse %> - <%= appartement.ville %>
+<%= link_to "Réserver?", new_appartement_reservation_path(appartement.id), class: "btn" %>
+<%# <a class="btn btn-primary" href="new_appartement_reservation_path" role="button">Réserver?</a></div> %>
+<br>
+<% end %>
+</div>

@@ -1,0 +1,10 @@
+<%= @appartement.id %> - <%= @appartement.adresse %> - <%= @appartement.ville %>
+<% console %>
+
+<%= form_for @reservation, url: appartement_reservation_index_path(@appartement.id, @reservation), html: { method: :post } do |f| %>
+  <%= f.label :start_date %>
+  <%= f.text_field :start_date %>
+  <%= f.label :end_date %>
+  <%= f.text_field :end_date %>
+  <%= f.submit %>
+<% end %>
