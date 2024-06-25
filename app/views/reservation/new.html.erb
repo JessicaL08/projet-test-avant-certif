@@ -1,5 +1,4 @@
 <%= @appartement.id %> - <%= @appartement.adresse %> - <%= @appartement.ville %>
-<% console %>
 
 <%= form_for @reservation, url: appartement_reservation_index_path(@appartement.id, @reservation), html: { method: :post } do |f| %>
   <%= f.label :start_date %>
