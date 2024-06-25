@@ -4,7 +4,7 @@
 <div class="container">
 <% @appartements.each do |appartement| %>
 <div class="card"><%= appartement.adresse %> - <%= appartement.ville %>
-<%= link_to "Réserver?", new_appartement_reservation_path(appartement.id), class: "btn" %>
+<%= link_to "Réserver?", new_appartement_reservation_path(appartement.id), class: "btn btn-primary" %>
 <%# <a class="btn btn-primary" href="new_appartement_reservation_path" role="button">Réserver?</a></div> %>
 <br>
 <% end %>
